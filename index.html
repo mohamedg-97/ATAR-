@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-white ">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a href="#"><i class="fa-solid fa-gamepad fa-3x text-primary"></i></a>
+                </div>
+                <a class="navbar-brand fs-2 lead mx-md-3" href="#">Atar!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="#">Contact US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle fs-5 form-control me-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Options
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item fs-5" href="#">Platforms</a></li>
+                                <li><a class="dropdown-item fs-5" href="#">Game Genres</a></li>
+                                <li><a class="dropdown-item fs-5" href="#">Price Range</a></li>
+                                <li><a class="dropdown-item fs-5" href="#">Best Sellers</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item fs-5" href="#">MORE..</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex gap-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Login
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>  <!-- /nav -->
+        <div class="icons">
+            <a href="#">
+                <i class="fa-brands fa-facebook d-block fs-1 text-primary"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram d-block  fs-1 my-3 text-primary"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter d-block  fs-1 my-3 text-primary"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-whatsapp  d-block fs-1 my-3 text-primary"></i>
+            </a>
+        </div> <!-- /icons -->
+        <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-black">
+                        <h5 class="modal-title fs-5" id="staticBackdropLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="px-4 py-3">
+                            <div class="mb-3">
+                                <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                    placeholder="email@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+                            </div>  
+                        </form>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-outline-primary">Submit</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header> <!-- /header -->
+
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide pointer-event" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imges/games1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption p-3">
+                        <h3 class="fs-1">"Ready to play? Let's go!"</h3>
+                        <p>"Your ultimate destination for epic gaming experiences!"</p>
+                        <button class="btn btn-outline-primary" type="submit">Shop Now!</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imges/games2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption p-3">
+                        <h3 class="fs-1">"Ready to play? Let's go!"</h3>
+                        <p>"Your ultimate destination for epic gaming experiences!"</p>
+                        <button class="btn btn-outline-primary" type="submit">Shop Now!</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imges/games4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption p-3">
+                        <h3 class="fs-1">"Ready to play? Let's go!"</h3>
+                        <p>"Your ultimate destination for epic gaming experiences!"</p>
+                        <button class="btn btn-outline-primary" type="submit">Shop Now!</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section> <!-- /carousel -->
+
+    <section>
+        <div class="jumbotron p-3 my-4 text-center bg-secondary-subtle ">
+            <h1 class="display-2">Welcome to Atar!</h1>
+            <button class="btn btn-outline-primary" type="submit">Learn more</button>
+            <div class="jumbotron jumbotron-fluid text-center my-5 py-5 bg-secondary text-white border rounded">
+                <div class="container ">
+                    <h2 class="">Exploring the World of Video Games!</h2>
+                    <p class="lead fs-6">Video games are a form of digital entertainment that involve interactive
+                        experiences between the player and a virtual environment. These games can range from simple,
+                        level-based challenges to complex, immersive worlds with rich narratives. They offer
+                        opportunities to enhance cognitive and social skills, including strategic thinking and teamwork.
+                        The video game industry is a rapidly growing sector, attracting millions of players worldwide
+                        and continuously evolving with advancements in technology.</p>
+                </div>
+            </div> <!-- /jumbotron -->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Horizon Battle
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne" style="">
+                        <div class="accordion-body bg-body-secondary">
+                            Description: An adventure and challenge game set in a futuristic world where players must
+                            use their skills to overcome powerful enemies and explore uncharted lands.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Shadow Warrior
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo" style="">
+                        <div class="accordion-body bg-body-secondary">
+                            Description: An action and stealth game where the player takes on the role of a mysterious
+                            warrior who undertakes secret missions in a world full of dangers and enemies, using
+                            strategies to overcome obstacles and survive.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Age of Legends
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body bg-body-secondary">
+                            Description: A role-playing game that takes players on a journey through mythical eras
+                            filled with legends and fantastic creatures, where they must assemble a team of heroes to
+                            face challenges and save the world from the forces of darkness.
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /accordion -->
+    </section> <!-- /Welcome to Atar! -->
+
+    <section>
+        <div class="container-fluid my-4 bg-secondary-subtle text-black py-3">
+            <div class="input-area">
+                <div class="title">
+                    <p class="display-4 text-center">Safe space to express your feelings! <small class="text-muted">
+                </div>
+                <div class="inp my-3">
+                    <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal"
+                        data-bs-target="#orderModal">
+                        Launch Now!
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade " id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <h1 class="modal-title text-black " id="orderModalLabel"> Launch Now!</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark ">
+                                    <p>Your request is being processed...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="font btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="font btn btn-outline-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <textarea class="form-control" id="orderDetails" rows="3"
+                        placeholder="provide your feedback about our website here.."></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- /2 -->
+        <div class="container-fluid my-4 bg-secondary-subtle text-black py-3">
+            <div class="input-area">
+                <div class="title">
+                    <p class="display-4 text-center">Safe space to express your feelings! <small class="text-muted">
+                </div>
+                <div class="inp my-3">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#orderModal">
+                        Launch Now!
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade " id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary-subtle">
+                                    <h1 class="modal-title text-black " id="orderModalLabel"> Launch Now!</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark ">
+                                    <p>Your request is being processed...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="font btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="font btn btn-outline-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text ">
+                    <textarea class="form-control" id="orderDetails" rows="3"
+                        placeholder="provide your feedback about our website here.."></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- /3 -->
+        <div class="container-fluid my-4 bg-secondary-subtle text-black py-3">
+            <div class="input-area">
+                <div class="title">
+                    <p class="display-4 text-center">Safe space to express your feelings! <small class="text-muted">
+                </div>
+                <div class="inp my-3">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#orderModal">
+                        Launch Now!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade " id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+                        aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary-subtle">
+                                    <h1 class="modal-title text-black " id="orderModalLabel"> Launch Now!</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark ">
+                                    <p>Your request is being processed...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="font btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="font btn btn-outline-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <textarea class="form-control" id="orderDetails" rows="3"
+                        placeholder="provide your feedback about our website here.."></textarea>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /Safe space -->
+
+    <section>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="container-fluid scroll-img col-12">
+
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid p-3 mb-4 text-center bg-secondary-subtle text-dark">
+            <div class="container">
+                <h2 class="display-4"> Atar! Store</h2>
+            </div>
+        </div>
+    </section> <!-- / Atar! Store -->
+
+    <section class="bg-secondary-subtle">
+        <div class="cards container-fluid my-4 ">
+            <div class="row text-center">
+                <div class="col-xl-4 col-lg-6  col-12 my-2">
+                    <div class="card  play">
+                        <img src="imges/Final Fantasy VII Rebirth.jpg" class="card-img-top" alt="played">
+                        <div class="card-body">
+                            <h5 class="card-title">Final Fantasy VII Rebirth</h5>
+                            <a href="#" class="btn btn-outline-primary up-1">Try now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6  col-12 my-2">
+                    <div class="card  play">
+                        <img src="imges/backpacking The Last of Us Part II Remasteredd.jpg" class="card-img-top"
+                            alt="played">
+                        <div class="card-body">
+                            <h5 class="card-title">The Last of Us Part II Remastered</h5>
+                            <a href="#" class="btn btn-outline-primary">Try now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6  col-12 my-2">
+                    <div class="card  play">
+                        <img src="imges/dragons fantasy artificial intelligence.jpg" class="card-img-top"
+                            alt="played">
+                        <div class="card-body">
+                            <h5 class="card-title">Dragons Fantasy Intelligence</h5>
+                            <a href="#" class="btn btn-outline-primary">Try now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--row /2 -->
+        <div class="cards container-fluid my-4">
+            <div class="row text-center">
+                <div class="col-xl-4 col-lg-6  col-12 my-2">
+                    <div class="card  play">
+                        <img src="imges/Resident Evil Village - Chris Redfield.jpg" class="card-img-top" alt="played">
+                        <div class="card-body">
+                            <h5 class="card-title">Horizon Forbidden Wes</h5>
+                            <a href="#" class="btn btn-outline-primary">Try now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6  col-12 my-2">
+                    <div class="card  play">
+                        <img src="imges/Horizon Zero Dawn - Weapons - Bows - Texturing, Tom Delboo.jpg"
+                            class="card-img-top" alt="played">
+                        <div class="card-body">
+                            <h5 class="card-title">Resident Evil Village</h5>
+                            <a href="#" class="btn btn-outline-primary">Try now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6  col-12 my-2">
+                    <div class="card  play">
+                        <img src="imges/Phantom Blade Zero se inspira em jogos como Metal Gear Rising e Ninja Gaiden.jpg"
+                            class="card-img-top" alt="played">
+                        <div class="card-body">
+                            <h5 class="card-title">Ratchet & Clank: Rift Apar</h5>
+                            <a href="#" class="btn btn-outline-primary">Try now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row/3 -->
+        <div class="cards container-fluid my-4 ">
+            <div class="row text-center">
+                <div class="col-xl-6  col-12 my-2">
+                    <div class="card  play">
+                        <img src="imges/𝑲𝑹𝑨𝑻𝑶𝑺.jpg" class="card-img-top" alt="played">
+                        <div class="card-body">
+                            <h5 class="card-title">Kratos</h5>
+                            <a href="#" class="btn btn-outline-primary">Try now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6  col-12 my-2">
+                    <div class="card  play">
+                        <img src="imges/Ratchet & Clank PS4 - Pixelizer & Hoverboard, Erin Zaneski.jpg"
+                            class="card-img-top" alt="played">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Ratchet & Clank</h5>
+                            <a href="#" class="btn btn-outline-primary">Try now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /try-now! -->
+
+    <section class=" bg-secondary-subtle">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="container-fluid scroll-img-2 col-12">
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid p-3 mb-4 text-center bg-secondary-subtle text-dark">
+            <div class="container">
+                <h2 class="display-4"> Atar! Store</h2>
+            </div>
+        </div>
+        <div class="container-fluid my-5 ">
+            <div class="row">
+                <div class="col-xl-4 col-12 mb-3">
+                    <div class="card text-bg-dark  text-center gamers ">
+                        <img src="imges/meoo3.jpg" class="card-img" alt="meooo">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Ninja (Blevins)</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12 mb-3">
+                    <div class="card text-bg-dark text-center gamers">
+                        <img src="imges/meoo1.jpg" class="card-img" alt="meooo">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Shroud (Grzesiek)</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-12 mb-3">
+                    <div class="card text-bg-dark text-center gamers">
+                        <img src="imges/meoo4.jpg" class="card-img" alt="meooo">
+                        <div class="card-img-overlay">
+                            <h3 class="card-title">Tfue (Tenney)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-secondary-subtle">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 w-100">
+                    <div class="card mb-3 col-12 fontasy" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-3 overflow-hidden">
+                                <img src="imges/ali (aliics) - Profile _ Pinterest.jpg" class="img-fluid rounded-start"
+                                    alt="Delicious Dish">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3 class="card-title fs-1"> Fortnite</h3>
+                                    <p class="card-text fs-5">Fortnite is a battle royale game developed by Epic Games
+                                        and released in 2017. It quickly gained immense popularity due to its vibrant
+                                        graphics, unique building mechanics, and engaging gameplay. Players are dropped
+                                        onto an island where they must gather resources, build structures, and fight
+                                        against 99 other players to be the last person standing. The game features
+                                        multiple modes, including solo, duo, and squad matches. Fortnite is known for
+                                        against 99 other players to be the last person standing. The game features
+                                        multiple modes, including solo, duo, and squad matches. Fortnite is known for
+                                        its frequent updates, live in-game events, and collaborations with popular
+                                        multiple modes, including solo, duo, and squad matches. Fortnite is known for
+                                        its frequent updates, live in-game events, and collaborations with popular
+                                        brands and celebrities. The game is free-to-play and is available on multiple
+                                        platforms, including PC, consoles, and mobile devices..</p>
+                                    <div class="card-text">
+                                        <div class="video d-flex gap-2 p-2">
+                                            <div class="links-card">
+                                                <a href="#"><i class="fas fa-gamepad fa-1x mx-3"></i></a>
+                                                <a href="#"><i class="fas fa-vr-cardboard fa-1x mx-3"></i></a>
+                                                <a href="#"><i class="fas fa-headset fa-1x mx-3"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 w-100">
+                    <div class="card mb-3 col-12 fontasy" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3 class="card-title fs-1">Call of Duty</h3>
+                                    <p class="card-text fs-5">Call of Duty: Warzone is a free-to-play battle royale game
+                                        released by Activision in March 2020. It is part of the Call of Duty franchise
+                                        and offers a large-scale combat experience where up to 150 players compete on a
+                                        massive map called Verdansk. The game features various modes, including the
+                                        released by Activision in March 2020. It is part of the Call of Duty franchise
+                                        and offers a large-scale combat experience where up to 150 players compete on a
+                                        massive map called Verdansk. The game features various modes, including the
+                                        traditional battle royale and Plunder, where players must collect cash scattered
+                                        across the map. Warzone integrates a unique "Gulag" feature, where players who
+                                        traditional battle royale and Plunder, where players must collect cash scattered
+                                        across the map. Warzone integrates a unique "Gulag" feature, where players who
+                                        are eliminated early in the game have a chance to fight 1v1 for a chance to
+                                        re-enter the battle. The game supports cross-platform play, allowing players on
+                                        different devices to compete together.</p>
+                                    <div class="video d-flex gap-2 p-2">
+                                        <div class="links-card">
+                                            <a href="#"><i class="fas fa-gamepad fa-1x mx-3"></i></a>
+                                            <a href="#"><i class="fas fa-vr-cardboard fa-1x mx-3"></i></a>
+                                            <a href="#"><i class="fas fa-headset fa-1x mx-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 overflow-hidden">
+                                <img src="imges/Cool hd pubg wallpapers 😍.jpg" class="img-fluid rounded-start"
+                                    alt="Delicious Dish">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 w-100">
+                    <div class="card mb-3 col-12 fontasy" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-3 overflow-hidden">
+                                <img src="imges/Ubisoft Tom Clancy’s The Division.jpg" class="img-fluid rounded-start"
+                                    alt="Delicious Dish">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3 class="card-title fs-1"> Apex Legends</h3>
+                                    <p class="card-text fs-5">Apex Legends is a battle royale game developed by Respawn
+                                        Entertainment and published by Electronic Arts. Released in February 2019, it
+                                        stands out due to its unique character-based gameplay, where each character,
+                                        known as a "Legend," has special abilities that can turn the tide of battle. Set
+                                        in the Titanfall universe, the game features squads of three players, who must
+                                        work together to outlast other teams on a shrinking battlefield. Apex Legends is
+                                        praised for its fast-paced action, strategic depth, and fluid movement
+                                        in the Titanfall universe, the game features squads of three players, who must
+                                        mechanics, including sliding and climbing. The game is available for free on
+                                        various platforms, including PC, consoles, and mobile.
+                                    </p>
+                                    <div class="video d-flex gap-2 p-2">
+                                        <div class="links-card">
+                                            <a href="#"><i class="fas fa-gamepad fa-1x mx-3"></i></a>
+                                            <a href="#"><i class="fas fa-vr-cardboard fa-1x mx-3"></i></a>
+                                            <a href="#"><i class="fas fa-headset fa-1x mx-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 w-100">
+                    <div class="card mb-3 col-12 fontasy" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <h3 class="card-title fs-1">Garena</h3>
+                                    <p class="card-text fs-5">Garena Free Fire, often referred to simply as Free Fire,
+                                        is a battle royale game developed by 111 Dots Studio and published by Garena.
+                                        Launched in December 2017, it is designed primarily for mobile platforms. In
+                                        Free Fire, 50 players are dropped onto an island where they must search for
+                                        Launched in December 2017, it is designed primarily for mobile platforms. In
+                                        weapons, supplies.</p>
+                                    <div class="video d-flex gap-2 p-2">
+                                        <div class="links-card">
+                                            <a href="#"><i class="fas fa-gamepad fa-1x mx-3"></i></a>
+                                            <a href="#"><i class="fas fa-vr-cardboard fa-1x mx-3"></i></a>
+                                            <a href="#"><i class="fas fa-headset fa-1x mx-3"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 overflow-hidden">
+                                <img src="imges/dhd.jpg" class="img-fluid rounded-start" alt="Delicious Dish">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links Section -->
+                <div class="col-md-3">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white fs-5">Home</a></li>
+                        <li><a href="#" class="text-white  fs-5">Games</a></li>
+                        <li><a href="#" class="text-white  fs-5">News</a></li>
+                        <li><a href="#" class="text-white  fs-5">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="col-md-3">
+                    <h3>Follow Us</h3>
+                    <div>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fs-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Customer Support Section -->
+                <div class="col-md-3">
+                    <h3>Customer Support</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white fs-5">FAQ</a></li>
+                        <li><a href="#" class="text-white fs-5">Help Center</a></li>
+                        <li><a href="#" class="text-white fs-5">Terms of Service</a></li>
+                        <li><a href="#" class="text-white fs-5">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Payment Methods Section -->
+                <div class="col-md-3">
+                    <h3>Payment Methods</h3>
+                    <div>
+                        <a href="#"><i class="fab fa-cc-visa fa-1x me-3 fs-1"></i></a>
+                        <a href="#"><i class="fab fa-cc-mastercard fa-2x me-3 fs-1"></i></a>
+                        <a href="#"><i class="fab fa-cc-paypal fa-2x fs-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p>© 2024 Gaming Website. All rights reserved.</p>
+                <p>©Mohamed Gamal Ibrahim</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
